@@ -1,0 +1,30 @@
+<!DOCTYPE HTML><html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <title>Cómo crear una barra de menú que cambia de tamaño | Estamos apañados</title>
+  <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="estilo.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+  </head><body>
+    <header class=“large”>
+    <nav><img class=“logo” src="/wdd.png"/>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Leer el tutorial</a></li>
+      <li><a href="#">Idea Original</a></li>
+    </ul> </nav>
+    </header>
+    <section>
+      <p>Vamos a realizar este peque&ntilde;o men&uacute;</p>
+      <p>Fin de las l&iacute;neas.</p>
+    </section>
+    <script type="text/javascript">
+    $(document).on("scroll",function(){
+      if($(document).scrollTop()>100){
+        
+    } else{
+        $("header").removeClass("small").addClass("large");
+    }
+});
+</script>
+  </body>
+</html>
