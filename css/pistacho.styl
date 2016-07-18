@@ -1,15 +1,17 @@
 pistacho=#adbe56
 body, html
+	font-family 'Open Sans', sans-serif
+	font-size 15px
 	height 100%
 	margin 0
 	width 100%
 header
 	height 10%
 	overflow hidden
-	background pistacho
 	padding 20px 0
-	width 100%
+	position fixed
 	transition all 1s
+	width 100%
 	z-index 100
 	#logo
 		display inline-block
@@ -20,32 +22,32 @@ header
 				height 50px
 nav
 	display inline-block
-	vertical-align top
 	float right
+	vertical-align top
 	ul
 		li
-			vertical-align top
 			display inline-block
 			list-style none
-			margin 0 10px
+			margin 0 1px
 			a
-				color #949CA2
+				color #394248
+				font-size 17px
+				font-weight 700
 				text-decoration none
 				&:hover
-					color gray
-#home
-	background pistacho
-#bio
-	background #ffffff
-#portafolio
-	background #3F5E62
-#contacto
-	background #ffffff
+					color #adbe56
+nav ul li.active
+	background rgba(255,255,255, 0.7)
+	border-radius 6px
+	padding 4px
+p
+	font-family arial,helvetica
+	color #333
 .header2 
-	position fixed
+	background transparent
 	height 40px
 	padding 10 0
-	background transparent
+	position fixed
 /*.header2 #logo 
 	padding 10 0
 .header2 nav 
@@ -55,11 +57,17 @@ nav
 	transition all 1s
 .container
 	margin 0 auto
-	width 1170px
+	width 80%
+.resaltado
+	color #3d4348
+	font-family 'Playfair Display', serif
+	font-size 3em
+.section
+	text-align center
 .wrap
 	height 100%
 	margin 0
-	overflow hidden 
 	min-height 100%
+	overflow hidden 
 	width 100%
 	z-index 1
